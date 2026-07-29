@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source Project"
+  short_description: "Prepare and audit genuine open-source projects"
+  default_prompt: "Use $open-source-project to prepare this repository for a public open-source release."
