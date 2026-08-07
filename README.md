@@ -28,6 +28,7 @@ These commands will work after this repository is published as `hatemecha/codex-
 | --- | --- | --- |
 | [`ensayo-editor`](./skills/ensayo-editor) | Edits and audits Spanish essays while preserving the author's voice. | `npx skills add hatemecha/codex-skills --skill ensayo-editor -g -a codex -y` |
 | [`open-source-project`](./skills/open-source-project) | Creates, converts, audits, and prepares genuinely open-source software projects. | `npx skills add hatemecha/codex-skills --skill open-source-project -g -a codex -y` |
+| [`orchestrating-engineering-agents`](./skills/orchestrating-engineering-agents) | Coordinates adaptive multi-agent software engineering, evidence gates, and orchestration evaluation. | `npx skills add hatemecha/codex-skills --skill orchestrating-engineering-agents -g -a codex -y` |
 
 ## Usage
 
@@ -36,6 +37,16 @@ Skills can activate automatically when a request matches their description. You 
 ```text
 Use $open-source-project to prepare this repository for its first public release.
 ```
+
+### Engineering Agent Orchestrator
+
+Use it when a software task benefits from multiple agents or when designing/testing an agentic engineering workflow:
+
+```text
+Use $orchestrating-engineering-agents to implement this feature with an adaptive multi-agent workflow and verify it before declaring it complete.
+```
+
+The skill chooses the smallest useful topology instead of forcing every task through a fixed squad. It separates authorship from approval, uses deterministic evidence gates, supports state-machine control and bounded repair loops, and includes a simulation/evaluation regime for testing orchestration designs against simpler baselines.
 
 ### Ensayo Editor
 
@@ -65,10 +76,18 @@ codex-skills/
 │   │   │   └── openai.yaml
 │   │   ├── references/
 │   │   └── SKILL.md
-│   └── open-source-project/
+│   ├── open-source-project/
+│   │   ├── agents/
+│   │   │   └── openai.yaml
+│   │   ├── references/
+│   │   └── SKILL.md
+│   └── orchestrating-engineering-agents/
 │       ├── agents/
 │       │   └── openai.yaml
 │       ├── references/
+│       │   ├── contracts.md
+│       │   ├── orchestration-model.md
+│       │   └── simulation-and-evals.md
 │       └── SKILL.md
 ├── .github/
 │   └── workflows/
