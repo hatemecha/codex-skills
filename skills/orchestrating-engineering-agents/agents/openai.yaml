@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Agent Orchestrator"
+  short_description: "Coordinate adaptive, evidence-driven engineering agents"
+  default_prompt: "Use $orchestrating-engineering-agents to plan and execute this software task with the smallest evidence-driven agent topology that fits its risk."
