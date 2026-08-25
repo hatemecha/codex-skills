@@ -72,3 +72,14 @@ Classify as **Critical**, **Structural**, **Simplification**, or **Polish**. Do 
 ## Completion
 
 Done when the requested behavior exists, unchanged behavior still holds, no unjustified layer was added, verification ran or is marked not executed, and remaining uncertainty is stated.
+
+## References
+
+The rules above apply established software design principles:
+
+- [KISS principle](https://en.wikipedia.org/wiki/KISS_principle)
+- [Don't repeat yourself (DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+- [You aren't gonna need it (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+- [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+- [Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming)) and [cohesion](https://en.wikipedia.org/wiki/Cohesion_(computer_science))
+- [Program optimization](https://en.wikipedia.org/wiki/Program_optimization) (measure before optimizing)

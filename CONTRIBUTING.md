@@ -1,8 +1,8 @@
 # Contributing
 
-Thanks for helping improve this Agent Skills collection.
+This is a personal collection of skills I use myself. It is not a community project, and contributions are not expected.
 
-This is a maintainer-led repository. Focused issues and pull requests are welcome; final scope and design decisions remain with the maintainer so the collection can stay coherent and low-maintenance.
+If you still open an issue or pull request, keep it focused. Final scope and design decisions stay with the maintainer.
 
 ## Quality bar
 

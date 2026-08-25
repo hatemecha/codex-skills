@@ -40,3 +40,12 @@ Parallelize independent analysis, test design, threat analysis, or isolated impl
 Independent reviewers should receive the requirements and the artifact, not the implementer's conclusion. Shared model, prompt, and context count as correlated evidence.
 
 Classify a failure before retrying: implementation, plan, requirement, test, or environment. Default to two repair cycles for the same root cause.
+
+## Primary references
+
+This model synthesizes established engineering-process practice:
+
+- [Separation of duties](https://en.wikipedia.org/wiki/Separation_of_duties)
+- [Code review](https://en.wikipedia.org/wiki/Code_review)
+- [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
+- [Finite-state machine](https://en.wikipedia.org/wiki/Finite-state_machine)
