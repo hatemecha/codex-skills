@@ -10,8 +10,8 @@ Build the least complicated design that satisfies the real requirements and stay
 
 ## Core rules
 
-1. Inspect the code, tests, interfaces, and call sites before proposing architecture.
-2. Preserve verified behavior unless the user asked to change it.
+1. Inspect the code, tests, interfaces, and call sites before proposing architecture. When the reason for an existing decision is not obvious, inspect its relevant history (blame, log, issues, or pull requests) before changing it.
+2. Preserve verified behavior unless the user asked to change it. Treat public and exported interfaces as contracts; changing them requires explicit user consent.
 3. Prefer explicit names, direct control flow, and visible data over cleverness.
 4. Solve the current problem. Do not add extension points for hypothetical futures.
 5. Centralize duplicated knowledge — the same rule changing for the same reason. Leave coincidental similarity alone.
@@ -52,10 +52,10 @@ If a check cannot run safely, continue with static inspection and mark it **not 
 ## Workflow
 
 1. Inspect the real system: source, tests, interfaces, config, manifests, and commands.
-2. State the change contract: objective, must-keep behavior, must-change behavior, non-goals, evidence.
+2. State the change contract: objective, must-keep behavior, must-change behavior, non-goals, evidence. If the requested change conflicts with the existing design, is underspecified in a way that affects correctness, or solves the wrong problem, say so before implementing and propose a better alternative or ask for the missing decision.
 3. Choose the least powerful mechanism that works: language feature, local function or type, existing project abstraction, existing dependency, then a new layer.
 4. Implement the smallest coherent slice. Remove dead code the change makes obsolete.
-5. Verify with the strongest available tests, types, lint, and acceptance checks. Inspect the diff for leftover helpers and unrelated churn.
+5. Add or update tests that express changed behavior. New behavior requires coverage unless no viable test harness exists; state any gap explicitly. Verify with the strongest available tests, types, lint, and acceptance checks. Inspect the diff for leftover helpers and unrelated churn.
 
 For a review or debt audit, read [review-playbook.md](references/review-playbook.md).
 
